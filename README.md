@@ -16,7 +16,7 @@ Here you can see to plots. The first one is chaotic - it shows how my pulse chan
 
 
 ## Technical stuff
-This project uses STM32F103 microcontroller (Bluepill board) and MAX30100 sensor. Software is written in bare-metal concept, using C++ and some assembly (vector table). MAX30100 simply checks how much light goes through your skin. this allows us to detect pulse:
+This project uses STM32F103 microcontroller (Bluepill board) and MAX30100 sensor. Software is written in bare-metal concept, using C++ and some assembly (vector table). MAX30100 simply checks how much light goes through your skin. And that depends of the blood pressure, that changes every hearthbeat. This allows us to detect pulse:
 
 ![pulse detection](https://github.com/Moderin/Hybrid/blob/master/beat_detect2.png)
 
