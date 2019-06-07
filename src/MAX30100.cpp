@@ -25,8 +25,8 @@ void MAX30100::init() {
     
     /*  Init MAX30100
      * 
-     *  sample rate: 100Hz
-     *  pulse width: 1600us
+     *  sample rate: 1000Hz
+     *  pulse width: 400us
      * 
      */
     
@@ -97,7 +97,7 @@ void MAX30100::init() {
     
     I2C1_WAIT_FOR_TXE;
     
-    I2C_DR = 0b11101 | (1 << 6);//0b00111 | (1 << 6);   // Send value of 0x07 reg (400us, 400Hz)
+    I2C_DR = 0b11101 | (1 << 6);   // Send value of 0x07 reg (400us, 1000Hz)
     I2C1_WAIT_FOR_TXE;
     
     I2C_DR = 0;
